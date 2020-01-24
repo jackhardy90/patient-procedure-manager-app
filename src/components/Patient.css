@@ -1,0 +1,43 @@
+.patient-container {
+    display: flex;
+    width: 100%;
+}
+
+.closed {
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    padding-right: 15px;
+}
+
+.render-patient-list{
+    
+    width: 75%;
+}
+
+.patient-dropdown{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: inherit;
+    background: lightskyblue;
+    width: 100%;
+    /* padding-left: 15px; */
+    padding-right: 15px;
+}
+.save-delete{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* .save{
+    display: flex;
+    align-items: left;
+    justify-content: space-evenly;
+}
+.delete{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+} */

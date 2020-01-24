@@ -1,0 +1,39 @@
+.new-patient-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: lightseagreen; */
+    width: 75%;
+    /* padding-left: 15px; */
+    padding-right: 15px;
+
+}
+
+.new-patient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: lightseagreen;
+    width: 100%;
+    /* padding-left: 15px; */
+    padding-right: 15px;
+}
+
+.new-patient-container label {
+    margin-right: 10px;
+}
+
+.new-patient-container label span {
+    margin-right: 5px;
+}
+.save{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+    
+.add-new-patient{
+    margin-top: 10px;
+
+}

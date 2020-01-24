@@ -1,0 +1,24 @@
+.patient-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: lightseagreen;
+    width: 75%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .header div{
+    display: flex;
+  }
+  
+  .header span{
+    margin-right: 5px;
+  }

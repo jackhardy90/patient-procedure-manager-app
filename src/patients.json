@@ -1,0 +1,46 @@
+{
+  "patients": [
+    {
+      "name": "Batman",
+      "dob": "03/30/1940",
+      "sex": "Undetermined",
+      "procedures": ["Colonoscopy (07/27/93)"]
+    },
+    {
+      "name": "Wolverine",
+      "dob": "??/??/1880",
+      "sex": "Male",
+      "procedures": ["EGD (03/21/1978)",  "Adamantium injections (??/??/1976)"]
+    },
+    {
+      "name": "Thor",
+      "dob": "08/08/1968",
+      "sex": "Male??",
+      "procedures": ["Appendectomy (01/12/89)"]
+    },
+    {
+      "name": "Gamora",
+      "dob": "??/??/????",
+      "sex": "Undetermined",
+      "procedures": ["Bone Replacement (09/23/2012)", "Radiation treatments (08/12/2010)"]
+    },
+    {
+      "name": "Thanos",
+      "dob": "02/06/1973",
+      "sex": "Undetermined",
+      "procedures": ["Midichlorian removal (02/12/99)"]
+    },
+    {
+      "name": "Wonder Woman",
+      "dob": "??/10/1941",
+      "sex": "Female",
+      "procedures": ["None"]
+    },
+    {
+      "name": "Yoda",
+      "dob": "??/??/????",
+      "sex": "Undetermined",
+      "procedures": ["Colonoscopy (01/01/2020"]
+    }
+  ]
+}
