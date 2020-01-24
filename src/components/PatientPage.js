@@ -25,7 +25,7 @@ class PatientPage extends React.Component {
   }
 
   fetchPosts() {
-      Axios.get('http://localhost:3001/api/patients')
+      Axios.get('https://patient-procedure-manager.herokuapp.com/api/patients')
       .then((response) => {
         const patients = response.data
 
@@ -40,7 +40,7 @@ class PatientPage extends React.Component {
   }
 
   handleAdd(patient) {
-    Axios.post('http://localhost:3001/api/patients', patient)
+    Axios.post('https://patient-procedure-manager.herokuapp.com/api/patients', patient)
         .then((response) => {
             this.fetchPosts();
         })
@@ -50,7 +50,7 @@ class PatientPage extends React.Component {
   }
 
   handleDelete(id) {
-    Axios.delete(`http://localhost:3001/api/patients/${id}`)
+    Axios.delete(`https://patient-procedure-manager.herokuapp.com/api/patients/${id}`)
         .then((response) => {
             this.fetchPosts();
         })
@@ -60,7 +60,7 @@ class PatientPage extends React.Component {
   }
 
   handleSave(id, data) {
-    Axios.put(`http://localhost:3001/api/patients/${id}`, data)
+    Axios.put(`https://patient-procedure-manager.herokuapp.com/api/patients/${id}`, data)
         .then((response) => {
             this.fetchPosts();
         })
