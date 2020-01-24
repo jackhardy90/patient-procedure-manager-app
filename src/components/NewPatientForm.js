@@ -67,8 +67,13 @@ class NewPatientForm extends React.Component {
 
 
             <br/>
-            <div className="save">
+            <div className="save-delete">
+              <label className="save">
                 <button>SAVE</button>
+              </label>
+              <label>
+                <button className="cancel" onClick={() => this.props.handleDelete( this.props.data )}>CANCEL</button>
+              </label>
             </div>
           </form>
         </div>

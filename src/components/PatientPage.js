@@ -12,12 +12,14 @@ class PatientPage extends React.Component {
     super(props);
 
     this.state = {
-      patients: []
+      patients: [],
+      originalPatients: [],
     };
 
     this.handleSave = this.handleSave.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
     this.handleAdd = this.handleAdd.bind(this);
+    this.handleSearchChange = this.handleSearchChange.bind(this);
   }
 
   componentDidMount() {
@@ -30,7 +32,8 @@ class PatientPage extends React.Component {
         const patients = response.data
 
         this.setState({
-            patients: patients
+            patients: patients,
+            originalPatients: [...patients],
         });
       })
       .catch((error) => {
@@ -77,6 +80,25 @@ class PatientPage extends React.Component {
       this.fetchPosts();
   }
 
+  handleSearchChange(value) {
+    const clone = [...this.state.originalPatients];
+
+    const newPatientList = clone.filter((item) => {
+        const fullName = item.firstName + ' ' + item.lastName;
+
+        const fullNameLowercase = fullName.toLowerCase();
+        const valueLowercase = value.toLowerCase();
+
+        if(fullNameLowercase.includes(valueLowercase)) {
+            return true;
+        }
+    });
+
+    this.setState({
+      patients: newPatientList
+    });
+  }
+
   render() {
     return (
       <div className="patient-page-container">
@@ -85,7 +107,8 @@ class PatientPage extends React.Component {
           <div>
             <span>Patient Search</span>
             <Search 
-                placeholder={this.props.placeholder}            
+                placeholder={this.props.placeholder}        
+                handleSearchChange={ this.handleSearchChange }    
             />
           </div>
         </div>
